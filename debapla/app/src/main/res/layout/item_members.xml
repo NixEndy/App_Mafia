@@ -15,9 +15,8 @@
         android:orientation="vertical"
         android:outlineProvider="none"
         android:overScrollMode="ifContentScrolls"
-        app:barrierMargin="@dimen/material_emphasis_medium"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="29dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="133dp">
 
         <TextView
             android:id="@+id/txtTitle2"
@@ -150,6 +149,11 @@
             android:layout_height="152dp"
             android:paddingLeft="@dimen/ImagePadding"
             app:srcCompat="@drawable/snorlax" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPoketechTeam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 

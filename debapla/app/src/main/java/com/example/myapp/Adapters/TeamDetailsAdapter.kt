@@ -15,7 +15,7 @@ import com.example.myapp.R
 //Implementamos: onCreateViewHolder, onBindViewHolder, getItemCount porque es una clase abstracta
 
 class TeamDetailsAdapter (val teamMembers: List<TeamMembers>) : RecyclerView.Adapter<TeamDetailsAdapter.ViewHolder>(){
-    inner class ViewHolder (listItem: View, itemView: View) : RecyclerView.ViewHolder(itemView){
+    inner class ViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){
         val txtEvee : TextView = itemView.findViewById(R.id.txtEveeName)
         val txtShinx : TextView = itemView.findViewById(R.id.txtShinxName)
         val txtCharmander : TextView = itemView.findViewById(R.id.txtCharmanderName)
