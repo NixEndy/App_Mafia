@@ -2,4 +2,7 @@
     <string name="app_name">Myapp</string>
     <string name="Details">Know me better</string>
     <string name="TeamTitle">Pocketech Team</string>
+    <string name="Name" />
+    <string name="NameMember">NAME</string>
+    <string name="description_member">DESCRIPTION</string>
 </resources>

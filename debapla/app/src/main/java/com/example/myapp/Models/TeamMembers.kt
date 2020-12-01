@@ -2,7 +2,7 @@ package com.example.myapp.Models
 
 import java.io.Serializable
 
-class TeamMember(
+class TeamMembers(
     val name: String,
     val lastName: String,
     val desc: List<String>,
