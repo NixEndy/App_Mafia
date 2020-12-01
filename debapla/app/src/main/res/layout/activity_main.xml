@@ -7,11 +7,164 @@
     android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        app:barrierMargin="@dimen/material_emphasis_high_type">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="?android:attr/windowOverscan"
+            android:orientation="vertical"
+            android:outlineProvider="none"
+            android:overScrollMode="ifContentScrolls"
+            app:barrierMargin="@dimen/material_emphasis_medium"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="29dp">
+
+            <TextView
+                android:id="@+id/txtTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:backgroundTint="@color/teal_200"
+                android:capitalize="characters"
+                android:fontFamily="@font/press_start_2p"
+                android:includeFontPadding="true"
+                android:padding="@dimen/TitlePadding2"
+                android:text="@string/TeamTitle"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.042" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/press_start_2p"
+                    android:paddingLeft="@dimen/ImagePadding"
+                    android:text="@string/NameMember"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="257dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/press_start_2p"
+                    android:includeFontPadding="true"
+                    android:text="@string/description_member"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtEveeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/press_start_2p"
+                android:includeFontPadding="true"
+                android:paddingLeft="@dimen/ImagePadding"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imgEve"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:paddingLeft="@dimen/ImagePadding"
+                app:srcCompat="@drawable/eveetalking" />
+
+            <TextView
+                android:id="@+id/txtShinxName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/press_start_2p"
+                android:includeFontPadding="true"
+                android:paddingLeft="@dimen/ImagePadding"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:paddingLeft="@dimen/ImagePadding"
+                app:srcCompat="@drawable/shinkb" />
+
+            <TextView
+                android:id="@+id/txtCharmanderName"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/press_start_2p"
+                android:includeFontPadding="true"
+                android:paddingLeft="@dimen/ImagePadding"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imgCharmander"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:paddingLeft="@dimen/ImagePadding"
+                app:srcCompat="@drawable/charmander" />
+
+            <TextView
+                android:id="@+id/txtEspurrName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/press_start_2p"
+                android:includeFontPadding="true"
+                android:paddingLeft="@dimen/ImagePadding"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                app:srcCompat="@drawable/espurr3" />
+
+            <TextView
+                android:id="@+id/txtSnorlaxName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/press_start_2p"
+                android:includeFontPadding="true"
+                android:paddingLeft="@dimen/ImagePadding"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:paddingLeft="@dimen/ImagePadding"
+                app:srcCompat="@drawable/snorlax" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMembers"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
