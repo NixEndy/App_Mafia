@@ -1,6 +1,5 @@
 package com.example.myapp.Models
 
-
 import java.io.Serializable
 
 class TeamMember(

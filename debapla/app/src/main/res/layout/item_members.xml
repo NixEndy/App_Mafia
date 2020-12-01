@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    app:barrierMargin="@dimen/material_emphasis_high_type">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="?android:attr/windowOverscan"
+        android:orientation="vertical"
+        android:outlineProvider="none"
+        android:overScrollMode="ifContentScrolls"
+        app:barrierMargin="@dimen/material_emphasis_medium"
+        tools:layout_editor_absoluteX="-23dp"
+        tools:layout_editor_absoluteY="-25dp">
+
+        <TextView
+            android:id="@+id/txtTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:capitalize="characters"
+            android:fontFamily="@font/press_start_2p"
+            android:padding="@dimen/TitlePadding2"
+            android:text="@string/TeamTitle"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <ImageView
+            android:id="@+id/imgEve"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:paddingLeft="@dimen/ImagePadding"
+            app:srcCompat="@drawable/eveetalking" />
+
+        <TextView
+            android:id="@+id/txtEvee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:paddingLeft="@dimen/ImagePadding"
+            app:srcCompat="@drawable/shinkb" />
+
+        <TextView
+            android:id="@+id/txtShinx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imgCharmander"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:paddingLeft="@dimen/ImagePadding"
+            app:srcCompat="@drawable/charmander" />
+
+        <TextView
+            android:id="@+id/txtCharmander"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            app:srcCompat="@drawable/espurr3" />
+
+        <TextView
+            android:id="@+id/txtEspurr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:paddingLeft="@dimen/ImagePadding"
+            app:srcCompat="@drawable/snorlax" />
+
+        <TextView
+            android:id="@+id/txtSnorlax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

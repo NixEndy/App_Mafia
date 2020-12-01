@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TitlePadding">29</dimen>
+    <dimen name="TitlePadding2">20</dimen>
+    <dimen name="ImagePadding">20</dimen>
+</resources>
