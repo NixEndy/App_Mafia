@@ -27,7 +27,7 @@ class TeamMembersAdapter(val teamMembers: List<TeamMembers>, val parent: AppComp
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val teamMembers : TeamMembers = teamMembers.get(position)
         holder.twName.text = teamMembers.name
-        holder.twLastname.text = teamMembers.lastname
+        holder.twLastname.text = teamMembers.lastName
     }
 
     override fun getItemCount(): Int {
