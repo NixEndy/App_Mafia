@@ -1,25 +1,18 @@
 package com.example.myapp.Adapters
 
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.myapp.Models.TeamMembers
 import com.example.myapp.R
 
-class TeamMembersAdapter (val teamMembers : List <TeamMembers>) : Adapter<TeamMembersAdapter.ViewHolder>() {
-    inner class ViewHolder(ListItem: View) : RecyclerView.ViewHolder(ListItem){
+class TeamMembersAdapter(val teamMembers: List<TeamMembers>, val parent: AppCompatActivity) : RecyclerView.Adapter<TeamMembersAdapter.ViewHolder>(){
+    inner class ViewHolder(listItem: View) : RecyclerView.ViewHolder(listItem){
         val twName : TextView = itemView.findViewById(R.id.txtName)
         val twLastname : TextView = itemView.findViewById(R.id.txtLastname)
-        val twDescription : TextView = itemView.findViewById(R.id.txtDescription)
-        //val twHabilities : TextView = itemView.findViewById(R.id.txtHabilities)
-        val twPlaying : TextView = itemView.findViewById(R.id.txtLastname)
-        val twGit : TextView = itemView.findViewById(R.id.txtLastname)
-        val imgUser : ImageView = itemView.findViewById(R.id.imgUser)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -35,11 +28,6 @@ class TeamMembersAdapter (val teamMembers : List <TeamMembers>) : Adapter<TeamMe
         val teamMembers : TeamMembers = teamMembers.get(position)
         holder.twName.text = teamMembers.name
         holder.twLastname.text = teamMembers.lastname
-        holder.twDescription.text = teamMembers.desc
-        holder.twPlaying.text = teamMembers.playing
-        holder.twGit.text = teamMembers.git
-
-
     }
 
     override fun getItemCount(): Int {
