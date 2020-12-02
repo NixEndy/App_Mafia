@@ -1,14 +1,15 @@
 package com.example.myapp.Models
 
-import java.io.Serializable
+import android.media.Image
 
 class TeamMembers(
-    val name: String,
-    val lastName: String,
-    val desc: List<String>,
-    val photo: String,
-    val habilities: String,
-    val git: String,
-    val playing: String
-) : Serializable {
+        val name: String,
+        val lastname:String,
+        val desc:String,
+        val photo: String,
+        val habilities:List<String>,
+        val git: String,
+        val playing:String
+
+      ) {
 }
