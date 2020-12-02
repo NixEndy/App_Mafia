@@ -7,7 +7,7 @@ class TeamMembers(
         val lastname:String,
         val desc:String,
         val photo: String,
-        val habilities:List<String>,
+        //val habilities:List<String>,
         val git: String,
         val playing:String
 
